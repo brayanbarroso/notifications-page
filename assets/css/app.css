@@ -38,6 +38,96 @@ body {
   font-size: 16px;
 }
 
+/* Header */
+.notification {
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  padding: 32px;
+}
+
+.notification-wrapper {
+  /* border: 1px solid red; */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 728px;
+}
+
+.notification-wrapper .notification-text {
+  /* border: 1px solid red; */
+  color: var(--Very-dark-blue);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.notification-wrapper .notification-alert {
+  /* border: 1px solid red; */
+  background-color: var(--Blue);
+  border-radius: 4px;
+  color: var(--White);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5px;
+  padding: 1px 6px;
+}
+
+.notification-wrapper .notification-button {
+  color: var(--Grayish-blue);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Notificaciones section */
+.message {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  max-width: 728px;
+}
+
+.message .message-notification::after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  display: block;
+  height: 10px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  width: 10px;
+}
+
+.message .message-notification {
+  align-items: center;
+  background-color: var(--Very-light-grayish-blue);
+  color: var(--Grayish-blue);
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.message .text-black {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+
+.message .text-blue {
+  color: var(--Blue);
+  font-weight: 800;
+}
+
+.message .text-grey {
+  font-weight: 800;
+}
+
+.message img {
+  max-width: 50px;
+}
+
 .attribution {
   font-size: 12px;
   text-align: center;
