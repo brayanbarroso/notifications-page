@@ -112,20 +112,39 @@ body {
 
 .message .text-black {
   color: var(--Very-dark-blue);
+  cursor: pointer;
   font-weight: 800;
+}
+
+.message .text-black:hover,
+.message .text-grey:hover,
+.message .text-blue:hover,
+.notification-wrapper .notification-button:hover {
+  color: var(--Blue);
 }
 
 .message .text-blue {
   color: var(--Blue);
+  cursor: pointer;
   font-weight: 800;
 }
 
 .message .text-grey {
+  cursor: pointer;
   font-weight: 800;
 }
 
 .message img {
   max-width: 50px;
+}
+
+.message .notification-text {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 0 20px;
 }
 
 .attribution {
