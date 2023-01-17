@@ -51,7 +51,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 728px;
+  max-width: 690px;
 }
 
 .notification-wrapper .notification-text {
@@ -83,10 +83,20 @@ body {
 .message {
   /* border: 1px solid red; */
   margin: 0 auto;
-  max-width: 728px;
+  max-width: 690px;
 }
 
-.message .message-notification::after {
+.message .notification-text {
+  align-items: center;
+  border-radius: 8px;
+  color: var(--Grayish-blue);
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+}
+
+.message .active::after {
   content: "";
   background-color: red;
   border-radius: 50%;
@@ -98,16 +108,20 @@ body {
   width: 10px;
 }
 
-.message .message-notification {
-  align-items: center;
+.message .active {
   background-color: var(--Very-light-grayish-blue);
-  color: var(--Grayish-blue);
+}
+
+.notification-text .text-message {
+  border: 1px solid var(--Light-grayish-blue1);
   border-radius: 8px;
-  display: flex;
-  gap: 20px;
-  height: 100px;
-  margin-bottom: 20px;
-  padding: 0 20px;
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 16px 20px;
+}
+
+.notification-text .text-message:hover {
+  background-color: var(--Very-light-grayish-blue);
 }
 
 .message .text-black {
@@ -136,15 +150,6 @@ body {
 
 .message img {
   max-width: 50px;
-}
-
-.message .notification-text {
-  align-items: center;
-  display: flex;
-  gap: 20px;
-  height: 100px;
-  margin-bottom: 20px;
-  padding: 0 20px;
 }
 
 .attribution {
