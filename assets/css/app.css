@@ -14,27 +14,14 @@
   --Very-dark-blue: hsl(224, 21%, 14%);
 }
 
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf");
-  font-style: normal;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf");
-  font-style: normal;
-  font-weight: 800;
-}
-
 * {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 16px;
 }
 
@@ -83,6 +70,7 @@ body {
 .message {
   /* border: 1px solid red; */
   margin: 0 auto;
+  height: auto;
   max-width: 690px;
 }
 
@@ -110,18 +98,32 @@ body {
 
 .message .active {
   background-color: var(--Very-light-grayish-blue);
+  cursor: pointer;
 }
 
 .notification-text .text-message {
   border: 1px solid var(--Light-grayish-blue1);
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 16px;
+  margin-top: 10px;
   padding: 16px 20px;
 }
 
 .notification-text .text-message:hover {
-  background-color: var(--Very-light-grayish-blue);
+  background-color: var(--Light-grayish-blue2);
+}
+
+.img-message {
+  align-items: center;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.img-message picture {
+  cursor: pointer;
 }
 
 .message .text-black {
@@ -152,10 +154,19 @@ body {
   max-width: 50px;
 }
 
+/* footer */
 .attribution {
-  font-size: 12px;
+  font-size: 14px;
+  margin-bottom: 20px;
   text-align: center;
 }
+
 .attribution a {
   color: var(--Blue-footer);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--Very-dark-blue);
 }
