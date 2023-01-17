@@ -21,8 +21,19 @@
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--Very-light-grayish-blue);
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
+}
+
+main {
+  background-color: var(--White);
+  border-radius: 12px;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 760px;
+  padding: 0 16px;
+  box-shadow: 2px 9px 12px 4px #e8e1e1;
 }
 
 /* Header */
@@ -169,4 +180,53 @@ body {
 
 .attribution a:hover {
   color: var(--Very-dark-blue);
+}
+
+@media only screen and (max-width: 415px) {
+  body {
+    background-color: var(--White);
+    font-size: 14px;
+  }
+
+  main {
+    border: none;
+    margin: 0;
+    width: 100%;
+    padding: 0 16px;
+    box-shadow: none;
+  }
+
+  .notification {
+    padding: 20px 16px 25px 16px;
+  }
+
+  .notification-wrapper .notification-text {
+    font-size: 16px;
+  }
+
+  .notification-wrapper .notification-alert {
+    margin-left: 2px;
+    padding: 1px 4px;
+  }
+
+  /* Notificaciones section */
+  .message .text-notification {
+    gap: 10px;
+    /* height: 100px; */
+    padding: 16px;
+    pointer-events: painted;
+  }
+
+  .message .active::after {
+    top: 0px;
+    left: 0px;
+  }
+
+  .message img {
+    max-width: 40px;
+  }
+
+  .img-message {
+    gap: 15px;
+  }
 }
